@@ -1,0 +1,9 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+libdir=@CMAKE_INSTALL_FULL_LIBDIR@
+includedir=@CMAKE_INSTALL_FULL_INCLUDEDIR@
+
+Name: codec2
+Description: Codec2 3200 in fixed point (codec2-fixed-point @PROJECT_VERSION@), libcodec2 API compatible
+Version: 1.2.0
+Libs: -L${libdir} -lcodec2
+Cflags: -I${includedir} -I${includedir}/codec2
